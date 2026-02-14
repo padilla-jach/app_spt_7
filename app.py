@@ -1,7 +1,7 @@
 #Librerías necesarias
-import plotly.graph_objects as go
-import pandas as pd
 import streamlit as st
+import pandas as pd
+import plotly.graph_objects as go
 
 #Lectura de la base de datos
 
@@ -14,8 +14,6 @@ df = df[df['model_year'] > 1990]
 st.header('Sprint 7: Análisis de la base de datos de la venta de autos')
 
 st.write('Se presentan gráficos indicativos del comportamiento del mercado de autos en Estados Unidos.')
-
-
 
 hist_button = st.checkbox('Construir histograma')
 
